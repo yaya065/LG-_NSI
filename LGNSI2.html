@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG page 2</title>
+    <link rel="stylesheet" type="text/css" href="CSSLG.css" />
+</head>
+<body>
+    <div class="title">
+        <img class ="logo2" src="images/logo 1.png" alt="Logo du Jeu">
+        <h1 id="choix">Choix des rôles : </h1>
+    </div>
+    <div class="roles">
+        <div class="roles1">
+            <img  src="images/villageois.jpg" alt="Villageois">
+            <img  src="images/lg.jpg"  alt="Loup Garou">
+            <img  src="images/cup.jpg"  alt="Cupidon">
+        </div><br>
+        <div class="nbr">
+            <input type="number" id="vil" class="nbdej" min="0" max="20"  value = "0">
+            <input type="number" id="lg" class="nbdej" min="1" max="20"  value = "0">
+            <input type="number" id="cup" class="nbdej" min="0" max="1" value = "0">
+        </div><br>
+        <div class="roles1">
+            <img  src="images/sorcière.jpg" alt="Sorcière">
+            <img  src="images/voyante.jpg" alt="Voyante">
+            <img  src="images/pf.jpg"  alt="Petite Fille">
+        </div><br>
+         <div class="nbr">
+            <input type="number" class="nbdej"  id="sor" min="0" max="1" value = "0">
+            <input type="number" class="nbdej" id="voy" min="0" max="1" value = "0">
+            <input type="number" class="nbdej" id="pf" min="0" max="1" value = "0">
+        </div>
+    </div><br><br>
+    <button class="playbutton" href="">Valider</button>
+    <script src="JSLG2.js"></script>
+</body>
+</html>

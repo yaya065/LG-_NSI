@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "monster";
+  src: url("font/Melted\ Monster.ttf");
+}
+body
+{
+  background-image: url("images/fond.png");  
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+img.logo1
+{
+  width : 30%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1.titre
+{
+font-family: "monster" ;
+font-weight: 100;
+color :rgb(189, 8, 8);
+text-align: center;
+margin-top: -35px;
+}
+
+h2
+{
+font-size: 25px;
+font-family: "monster" ;
+font-weight: 100;
+color :rgb(189, 8, 8);
+text-align: center;
+}
+
+input[type=number]
+{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+
+.playbutton
+{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  font-family: "monster";
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+/* trouvé sur : https://developer.mozilla.org/fr/docs/Web/HTML/Element/Button */
+
+.title
+{
+display: flex;
+align-items: center;
+margin-top: -35px;
+}
+
+
+
+img.logo2
+{
+  width : 30%;
+  display: block;
+}
+
+h1#choix
+{
+font-family: "monster" ;
+font-weight: 100;
+color :rgb(189, 8, 8);
+text-align: center;
+}
+
+.roles
+{
+  margin-top: -35px;
+}
+
+.roles1
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.roles1 img
+{
+width : 10%
+}
+
+.nbr
+{
+display: flex;
+}
+
+
