@@ -64,13 +64,22 @@ input[type=number]
 }
 /* trouvé sur : https://developer.mozilla.org/fr/docs/Web/HTML/Element/Button */
 
+.title2
+{
+display: flex;
+flex-direction: column;
+margin-top: -35px;
+font-family: "monster" ;
+font-weight: 100;
+color :rgb(189, 8, 8);
+}
+
 .title
 {
 display: flex;
-align-items: center;
-margin-top: -35px;
+justify-content:flex-start;
+margin-top: 35px;
 }
-
 
 
 img.logo2
@@ -85,6 +94,7 @@ font-family: "monster" ;
 font-weight: 100;
 color :rgb(189, 8, 8);
 text-align: center;
+margin-top: 50px;
 }
 
 .roles
@@ -109,4 +119,10 @@ width : 10%
 display: flex;
 }
 
-
+#image0
+{
+  width : 30%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

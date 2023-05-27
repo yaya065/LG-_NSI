@@ -44,9 +44,17 @@ let nbrestant = nbjoueurs - nbroles
 
 for(valeur of valeursDesRoles){
   valeur.addEventListener("input", function(){
-    title.innerHTML = "Choix des rôles : " + nbrestant +" rôles restants à choisir "
     nbroles = sum(valeursDesRoles)
-    console.log("b")
+    nbrestant = nbjoueurs - nbroles
+    if (nbrestant > 0){
+      title.innerHTML = "Choix des rôles : " + nbrestant +" rôles restants à choisir "
+      } 
+    else if(nbrestant == 0){
+      title.innerHTML = "La composition est prète !"
+    }
+    else{
+      title.innerHTML = "Choix des rôles : " + -nbrestant +" rôles en trop "
+    }
   })
 }
 
@@ -56,23 +64,35 @@ function fabcompo()
 {
 let compo = []
 for (let i = 0; i <= vil.value; i++) {
-  compo.push("Vil")
+  compo.push("V")
 }
 for (let i = 0; i <= lg.value; i++) {
-  compo.push("lg")
+  compo.push("L")
 }
-for (let i = 0; i <= vil.value; i++) {
-  compo.push("sor")
+for (let i = 0; i <= sor.value; i++) {
+  compo.push("S")
 }
-for (let i = 0; i <= vil.value; i++) {
-  compo.push("pf")
+for (let i = 0; i <= pf.value; i++) {
+  compo.push("P")
 }
-for (let i = 0; i <= vil.value; i++) {
-  compo.push("cup")
+for (let i = 0; i <= cup.value; i++) {
+  compo.push("C")
 }
-for (let i = 0; i <= vil.value; i++) {
-  compo.push("voy")
+for (let i = 0; i <= voy.value; i++) {
+  compo.push("O")
 }
 return compo
 }
-console.log(fabcompo())
+
+let composition = fabcompo()
+
+
+function Jouer() {
+  if (nbrestant == 0) {
+    localStorage.setItem("compo", composition);
+    window.location.href='LGNSI3.html';
+  } 
+  else {
+    alert("Vous devez séléctionner autant de roles que de joueurs.");
+  }
+}
