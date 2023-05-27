@@ -62,30 +62,30 @@ for(valeur of valeursDesRoles){
 
 function fabcompo() 
 {
-let compo = []
-for (let i = 0; i <= vil.value; i++) {
-  compo.push("V")
-}
-for (let i = 0; i <= lg.value; i++) {
-  compo.push("L")
-}
-for (let i = 0; i <= sor.value; i++) {
-  compo.push("S")
-}
-for (let i = 0; i <= pf.value; i++) {
-  compo.push("P")
-}
-for (let i = 0; i <= cup.value; i++) {
-  compo.push("C")
-}
-for (let i = 0; i <= voy.value; i++) {
-  compo.push("O")
-}
-return compo
+  let compo = []
+  for (let i = 0; i <= vil.value; i++) {
+    compo.push("villageois")
+  }
+  for (let i = 0; i < lg.value; i++) {
+    compo.push("loup-garou")
+  }
+  for (let i = 0; i < sor.value; i++) {
+    compo.push("sorcière")
+  }
+  for (let i = 0; i < pf.value; i++) {
+    compo.push("petite-fille")
+  }
+  for (let i = 0; i < cup.value; i++) {
+    compo.push("cupidon")
+  }
+  for (let i = 0; i < voy.value; i++) {
+    compo.push("voyante")
+  }
+  return compo
 }
 
 let composition = fabcompo()
-
+console.log(composition)
 
 function Jouer() {
   if (nbrestant == 0) {

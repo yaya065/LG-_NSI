@@ -1,34 +1,17 @@
 let nbjoueurs = localStorage.getItem("nombredejoueurs")
-let compo = localStorage.getItem("compo") 
-let image = document.getElementById("image0");
-let bouton = document.getElementById("suivant");
-console.log(compo)
-    
-function  compoaffichage() {
-    let i = 0
-        if(compo[i] == "V"){
-            image.setAttribute("src", "images/villageois.jpg"); 
-        }
-        else if(compo[i] == "L"){
-            image.setAttribute("src", "images/lg.jpg"); 
-        }
-        else if(compo[i] == "sor"){
-            image.setAttribute("S", "images/sorcière.jpg"); 
-        }
-        else if(compo[i] == "P"){
-            image.setAttribute("src", "images/pf.jpg"); 
-        }
-        else if(compo[i] == "C"){
-            image.setAttribute("src", "images/cup.jpg"); 
-        }
-        else if(compo[i] == "O"){
-            image.setAttribute("src", "images/voyante.jpg"); 
-        }
-        else{
-        }
-        alert("Appellez le joueur suivant pour qu'il reçoive son rôle ...");
-        if (i<nbj)
+// "compo" qui était une liste a été envoyée par JS comme une string qui contient tous
+// les éléments, séparés par des virgules d'où le split
+let composition = localStorage.getItem("compo").split(',')
+let image = document.getElementById("image0")
+let bouton = document.getElementById("suivant")
 
+console.log(composition)
+
+function compoaffichage() {
+    for (let i = 0; i < composition.length; i++) {
+        console.log(i + " => " + composition[i])
+        image.setAttribute("src", "images/"+composition[i]+".jpg")
+        alert("Appellez le joueur suivant pour qu'il reçoive son rôle ...")
     }
-    
-} 
+}
+//Par manque de temps je n'ai pas pu fabriquer de fonction qui mélange aléatoirement compo mais dans l'absolu il en faudrait.
